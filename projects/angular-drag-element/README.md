@@ -63,7 +63,6 @@ import { DragElementModule } from 'angular-drag-element';
   dragAxis="x"
   [dragIcon]="true"
   [dragIconInnerText]="dragIconInnerText"
-  style="top:450px;left:550px"
   dragElementClass="test"
 >
   <p>Drag Me !</p>
