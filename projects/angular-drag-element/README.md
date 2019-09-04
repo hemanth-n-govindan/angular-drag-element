@@ -1,25 +1,76 @@
 # Angular Drag Element
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.4.
+An angular directive to enable html elements to drag in available space. We can control drag option with vertically/horizontally by using axis.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project drag-element` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project drag-element`.
+## Including in module
 
-> Note: Don't forget to add `--project drag-element` or else it will be added to the default project in your `angular.json` file.
+```js
+import { DragElementModule } from 'angular-drag-element';
+@NgModule({
+    imports: [
+        ....,
+        DragElementModule
+    ],
+    declarations: [YourComponent ],
+    exports: [YourComponent],
+    bootstrap: [YourComponent],
+})
+.....
 
-## Build
 
-Run `ng build drag-element` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
 
-## Publishing
+## Including in HTML
 
-After building your library with `ng build drag-element`, go to the dist folder `cd dist/drag-element` and run `npm publish`.
+```html
+<div class="card card-small" tabindex="0" [ngx-drag-element]="true">
+  <p>Drag Me !</p>
+  <p>Based on 'y' axis set input dragAxis="y"</p>
+</div>
+```
 
-## Running unit tests
+```html
+<div
+  class="card card-small"
+  tabindex="0"
+  [ngx-drag-element]="true"
+  dragAxis="x"
+>
+  <p>Drag Me !</p>
+  <p>Based on 'x' axis set input dragAxis="x"</p>
+</div>
+```
 
-Run `ng test drag-element` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```html
+<div
+  class="card card-small"
+  tabindex="0"
+  [ngx-drag-element]="true"
+  dragAxis="xy"
+>
+  <p>Drag Me !</p>
+  <p>Based on 'xy' axis set input dragAxis="xy"</p>
+</div>
+```
 
-## Further help
+```html
+<div
+  class="card card-small"
+  tabindex="0"
+  [ngx-drag-element]="true"
+  dragAxis="x"
+  [dragIcon]="true"
+  [dragIconInnerText]="dragIconInnerText"
+  style="top:450px;left:550px"
+  dragElementClass="test"
+>
+  <p>Drag Me !</p>
+  <p>Darg Icon InnerText value as "{{dragIconInnerText}}"</p>
+</div>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Example angular-drag-element
+
+[#demo](https://github.com/hemanth-n-govindan/angular-drag-element)
