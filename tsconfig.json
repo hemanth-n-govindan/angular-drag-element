@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "drag-element": [
+        "dist/drag-element"
+      ],
+      "drag-element/*": [
+        "dist/drag-element/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

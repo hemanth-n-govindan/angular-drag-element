@@ -1,0 +1,13 @@
+{
+  "name": "drag-element",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.4",
+    "@angular/core": "^8.2.4"
+  },
+  "author": {
+    "name": "Hemanth N Govindan",
+    "email": "hemanth.n.govindan@gmail.com",
+    "description": "An angular directive to enable html elements to drag in available space. We can control drag option with vertically/horizontally by using axis."
+  }
+}
