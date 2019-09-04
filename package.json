@@ -1,5 +1,5 @@
 {
-  "name": "drag-element",
+  "name": "angular-drag-element",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

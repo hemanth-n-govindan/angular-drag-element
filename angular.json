@@ -3,40 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "drag-element": {
+    "angular-drag-element": {
       "projectType": "library",
-      "root": "projects/drag-element",
-      "sourceRoot": "projects/drag-element/src",
+      "root": "projects/angular-drag-element",
+      "sourceRoot": "projects/angular-drag-element/src",
       "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/drag-element/tsconfig.lib.json",
-            "project": "projects/drag-element/ng-package.json"
+            "tsConfig": "projects/angular-drag-element/tsconfig.lib.json",
+            "project": "projects/angular-drag-element/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/drag-element/src/test.ts",
-            "tsConfig": "projects/drag-element/tsconfig.spec.json",
-            "karmaConfig": "projects/drag-element/karma.conf.js"
+            "main": "projects/angular-drag-element/src/test.ts",
+            "tsConfig": "projects/angular-drag-element/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-drag-element/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/drag-element/tsconfig.lib.json",
-              "projects/drag-element/tsconfig.spec.json"
+              "projects/angular-drag-element/tsconfig.lib.json",
+              "projects/angular-drag-element/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
-    }},
-  "defaultProject": "drag-element"
+    }
+  },
+  "defaultProject": "angular-drag-element"
 }
