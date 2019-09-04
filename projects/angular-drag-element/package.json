@@ -1,6 +1,6 @@
 {
   "name": "angular-drag-element",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^8.2.4",
     "@angular/core": "^8.2.4"
@@ -13,5 +13,14 @@
   "repository": {
     "url": "https://github.com/hemanth-n-govindan/angular-drag-element",
     "type": "angular directive"
-  }
+  },
+  "keywords": [
+    "angular drag element",
+    "angular2 drag element",
+    "drag-elements",
+    "element-drag",
+    "ng2-drag",
+    "drag-element",
+    "html-drag"
+  ]
 }
