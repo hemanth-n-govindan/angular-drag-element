@@ -72,4 +72,4 @@ import { DragElementModule } from 'angular-drag-element';
 
 # Example angular-drag-element
 
-[#demo](https://github.com/hemanth-n-govindan/angular-drag-element)
+[#demo](https://github.com/hemanth-n-govindan/angular-drag-element-example)
